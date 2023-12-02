@@ -19,3 +19,19 @@
 
 # Go workspace file
 go.work
+
+# IDEs and editors
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.un~
+*~
+*.swp
+*.swo
