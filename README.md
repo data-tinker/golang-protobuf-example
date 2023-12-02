@@ -4,6 +4,7 @@ Protocol Buffers usage example in Go
 ## Running Locally
 * Build the protocol buffer definition: `protoc --go_out=. *.proto`
 * Run the program: `go run main.go`
+* Run tests: `go test ./...`
 
 ## Technologies Used
 * [Go](https://go.dev/)
