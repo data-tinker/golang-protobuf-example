@@ -1,10 +1,8 @@
 package main
 
 import (
-	"golang-proto-example/person"
+	"golang-proto-example/models"
 	"log"
-
-	"google.golang.org/protobuf/proto"
 )
 
 const (
@@ -15,22 +13,14 @@ const (
 )
 
 func main() {
-	user := person.Person{
-		Name: name,
-		Age:  age,
-		SocialFollowers: &person.SocialFollowers{
-			Youtube: youtubeFollowers,
-			Twitter: twitterFollowers,
-		},
-	}
+	user := models.CreateUser(name, age, youtubeFollowers, twitterFollowers)
 
-	data, err := proto.Marshal(&user)
+	data, err := models.MarshalUser(user)
 	if err != nil {
 		log.Fatal("Marshaling error: ", err)
 	}
 
-	readUser := &person.Person{}
-	err = proto.Unmarshal(data, readUser)
+	readUser, err := models.UnmarshalUser(data)
 	if err != nil {
 		log.Fatal("Unmarshalling error: ", err)
 	}
