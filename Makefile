@@ -1,5 +1,5 @@
 build:
-	docker build -t golang-proto-example .
+	docker build -t golang-protobuf-example .
 
 run:
-	docker run golang-proto-example
+	docker run golang-protobuf-example

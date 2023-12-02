@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang-proto-example/models"
+	"golang-protobuf-example/models"
 	"log"
 )
 

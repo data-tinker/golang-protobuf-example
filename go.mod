@@ -1,4 +1,4 @@
-module golang-proto-example
+module golang-protobuf-example
 
 go 1.21
 

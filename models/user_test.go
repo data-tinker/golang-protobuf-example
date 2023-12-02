@@ -1,7 +1,7 @@
 package models
 
 import (
-	"golang-proto-example/userpb"
+	"golang-protobuf-example/userpb"
 	"testing"
 
 	"google.golang.org/protobuf/proto"
