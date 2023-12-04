@@ -9,5 +9,6 @@ Protocol Buffers usage example in Go
 
 ## Technologies Used
 * [Go](https://go.dev/)
+* [protobuf](https://pkg.go.dev/google.golang.org/protobuf)
 * [Protocol Buffer](https://protobuf.dev/getting-started/gotutorial/)
 * [Docker](https://www.docker.com/)
